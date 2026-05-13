@@ -5,11 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast Ambulance Service-chennai | 24/7 Emergency Transit</title>
     <meta name="description" content="Emergency ambulance service. ALS, BLS, Neonatal, Air Ambulance, Funeral Service. Available 24/7.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1e40af">
     
     <!-- Favicon / Title Logo -->
     <link rel="icon" type="image/png" href="image/logo.png">
 
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="image/sideview.jpeg">
+    <link rel="preload" as="image" href="image/paninida.jpeg">
+    <link rel="preload" as="image" href="image/interior.jpeg">
+    <link rel="preload" as="image" href="image/navlogo.png">
+    <link rel="preload" as="image" href="image/logo.png">
+
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//unpkg.com">
+    <link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="//images.unsplash.com">
+    <link rel="dns-prefetch" href="//www.google.com">
+    <link rel="dns-prefetch" href="//generativelanguage.googleapis.com">
+
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Leaflet CSS & JS for Live Map -->
@@ -268,7 +287,7 @@
                     
                     <!-- Hover Card 1 -->
                     <div class="group relative h-[280px] sm:h-[400px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg reveal cursor-pointer" >
-                        <img src="image/sideview.jpeg" alt="25+ Years Experience" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="image/sideview.jpeg" alt="25+ Years Experience" decoding="async" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/60 to-transparent transition-all duration-500 group-hover:bg-brand-dark/85 group-hover:via-brand-dark/70"></div>
                         
                         <div class="absolute inset-0 p-5 sm:p-8 flex flex-col justify-end">
@@ -288,7 +307,7 @@
 
                     <!-- Hover Card 2 -->
                     <div class="group relative h-[280px] sm:h-[400px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg reveal delay-100 cursor-pointer" >
-                        <img src="image/paninida.jpeg" alt="Network" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="image/paninida.jpeg" alt="Network" decoding="async" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/60 to-transparent transition-all duration-500 group-hover:bg-brand-dark/85 group-hover:via-brand-dark/70"></div>
                         
                         <div class="absolute inset-0 p-5 sm:p-8 flex flex-col justify-end">
@@ -308,7 +327,7 @@
 
                     <!-- Hover Card 3 -->
                     <div class="group relative h-[280px] sm:h-[400px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg reveal delay-200 cursor-pointer">
-                        <img src="image/interior.jpeg" alt="ICU on Wheels" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <img src="image/interior.jpeg" alt="ICU on Wheels" decoding="async" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/60 to-transparent transition-all duration-500 group-hover:bg-brand-dark/85 group-hover:via-brand-dark/70"></div>
                         
                         <div class="absolute inset-0 p-5 sm:p-8 flex flex-col justify-end">
@@ -346,7 +365,7 @@
                     <div class="group bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col reveal border border-gray-100">
                         <div class="relative h-48 sm:h-64 overflow-hidden">
                             <div class="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-colors z-10"></div>
-                            <img src="image/interior.jpeg" alt="ALS" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/interior.jpeg" alt="ALS" decoding="async" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <span class="absolute top-3 right-3 sm:top-4 sm:right-4 bg-white/90 backdrop-blur text-brand-primary font-bold px-3 py-1 sm:px-4 sm:py-1.5 rounded-full z-20 text-[10px] sm:text-sm uppercase shadow-md">ACLS Care</span>
                         </div>
                         <div class="p-6 sm:p-8 flex-grow flex flex-col relative mt-2 sm:mt-0">
@@ -364,7 +383,7 @@
                     <div class="group bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col reveal delay-100 border border-gray-100">
                         <div class="relative h-48 sm:h-64 overflow-hidden">
                             <div class="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-colors z-10"></div>
-                            <img src="image/miniambulance.png" alt="BLS" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/miniambulance.png" alt="BLS" decoding="async" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <span class="absolute top-3 right-3 sm:top-4 sm:right-4 bg-white/90 backdrop-blur text-brand-primary font-bold px-3 py-1 sm:px-4 sm:py-1.5 rounded-full z-20 text-[10px] sm:text-sm uppercase shadow-md">Pan-India</span>
                         </div>
                         <div class="p-6 sm:p-8 flex-grow flex flex-col relative mt-2 sm:mt-0">
@@ -381,7 +400,7 @@
                     <div class="group bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col reveal delay-200 border border-gray-100">
                         <div class="relative h-48 sm:h-64 overflow-hidden">
                             <div class="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-colors z-10"></div>
-                            <img src="image/flightambulance.webp" alt="Air" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/flightambulance.webp" alt="Air" decoding="async" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <span class="absolute top-3 right-3 sm:top-4 sm:right-4 bg-white/90 backdrop-blur text-brand-primary font-bold px-3 py-1 sm:px-4 sm:py-1.5 rounded-full z-20 text-[10px] sm:text-sm uppercase shadow-md">Repatriation</span>
                         </div>
                         <div class="p-6 sm:p-8 flex-grow flex flex-col relative mt-2 sm:mt-0">
@@ -442,7 +461,7 @@
                     
                     <!-- Fleet Card 1: Funeral Vans (Moved to First Position) -->
                     <div class="group relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg reveal cursor-pointer transition-all duration-500 bg-brand-dark border border-transparent hover:border-brand-primary/50 hover:-translate-y-1" onclick="navigateTo('fleet-vans')">
-                        <img src="image/glassvan2.png" alt="Funeral Vans" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <img src="image/glassvan2.png" alt="Funeral Vans" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/70 to-transparent transition-all duration-500 group-hover:via-brand-dark/80 group-hover:to-brand-dark/40 z-10"></div>
                         
@@ -467,7 +486,7 @@
 
                     <!-- Fleet Card 2: Ambulances -->
                     <div class="group relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg reveal delay-100 cursor-pointer transition-all duration-500 bg-brand-dark border border-transparent hover:border-brand-primary/50 hover:-translate-y-1" onclick="navigateTo('fleet-medical')">
-                        <img src="image/minivaninterior.jpeg" alt="Medical Fleet" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <img src="image/minivaninterior.jpeg" alt="Medical Fleet" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/70 to-transparent transition-all duration-500 group-hover:via-brand-dark/80 group-hover:to-brand-dark/40 z-10"></div>
                         
@@ -492,7 +511,7 @@
 
                     <!-- Fleet Card 3: Medical Equipment -->
                     <div class="group relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg reveal delay-200 cursor-pointer transition-all duration-500 bg-brand-dark border border-transparent hover:border-brand-primary/50 hover:-translate-y-1" onclick="navigateTo('fleet-equipment')">
-                        <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=800&q=80" alt="Medical Equipment" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=800&q=80" alt="Medical Equipment" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/70 to-transparent transition-all duration-500 group-hover:via-brand-dark/80 group-hover:to-brand-dark/40 z-10"></div>
                         
@@ -517,7 +536,7 @@
 
                     <!-- Fleet Card 4: Mortuary Services -->
                     <div class="group relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg reveal delay-300 cursor-pointer transition-all duration-500 bg-brand-dark border border-transparent hover:border-brand-primary/50 hover:-translate-y-1" onclick="navigateTo('fleet-mortuary')">
-                        <img src="image/goldfreezerbox.jpeg" alt="Mortuary Services" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <img src="image/goldfreezerbox.jpeg" alt="Mortuary Services" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/70 to-transparent transition-all duration-500 group-hover:via-brand-dark/80 group-hover:to-brand-dark/40 z-10"></div>
                         
@@ -563,7 +582,7 @@
                     <!-- Card 1 -->
                     <div class="bg-white rounded-2xl shadow-md overflow-hidden group border border-slate-100 hover:shadow-xl transition-all duration-300">
                         <div class="h-48 sm:h-56 overflow-hidden relative">
-                            <img src="image/paninida.jpeg" alt="Mobile ICU" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/paninida.jpeg" alt="Mobile ICU" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <div class="p-5 sm:p-6 border-t-4 border-brand-primary flex flex-col h-[140px] sm:h-[160px]">
                             <h3 class="text-lg sm:text-xl font-head font-bold text-brand-dark mb-1 sm:mb-2">Mobile ICU on Wheels</h3>
@@ -574,7 +593,7 @@
                     <!-- Card 2 -->
                     <div class="bg-white rounded-2xl shadow-md overflow-hidden group border border-slate-100 hover:shadow-xl transition-all duration-300 delay-100">
                         <div class="h-48 sm:h-56 overflow-hidden relative">
-                            <img src="image/interior.jpeg" alt="ACLS Ambulance" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/interior.jpeg" alt="ACLS Ambulance" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <div class="p-5 sm:p-6 border-t-4 border-brand-cyan flex flex-col h-[140px] sm:h-[160px]">
                             <h3 class="text-lg sm:text-xl font-head font-bold text-brand-dark mb-1 sm:mb-2">Advanced Cardiac Support</h3>
@@ -585,7 +604,7 @@
                     <!-- Card 3 -->
                     <div class="bg-white rounded-2xl shadow-md overflow-hidden group border border-slate-100 hover:shadow-xl transition-all duration-300 delay-200">
                         <div class="h-48 sm:h-56 overflow-hidden relative">
-                            <img src="image/flightambulance.webp" alt="Pan-India Transport" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/flightambulance.webp" alt="Pan-India Transport" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <div class="p-5 sm:p-6 border-t-4 border-brand-accent flex flex-col h-[140px] sm:h-[160px]">
                             <h3 class="text-lg sm:text-xl font-head font-bold text-brand-dark mb-1 sm:mb-2">Pan-India Transport</h3>
@@ -596,7 +615,7 @@
                     <!-- Card 4 -->
                     <div class="bg-white rounded-2xl shadow-md overflow-hidden group border border-slate-100 hover:shadow-xl transition-all duration-300 delay-300">
                         <div class="h-48 sm:h-56 overflow-hidden relative">
-                            <img src="image/bigside.jpeg" alt="Intercity Transfer" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/bigside.jpeg" alt="Intercity Transfer" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <div class="p-5 sm:p-6 border-t-4 border-slate-400 flex flex-col h-[140px] sm:h-[160px]">
                             <h3 class="text-lg sm:text-xl font-head font-bold text-brand-dark mb-1 sm:mb-2">Intercity Chennai</h3>
@@ -640,7 +659,7 @@
                     <!-- Card 1 -->
                     <div class="bg-white rounded-2xl shadow-md overflow-hidden group border border-slate-100 hover:shadow-xl transition-all duration-300">
                         <div class="h-48 sm:h-56 overflow-hidden relative bg-slate-100">
-                            <img src="image/suction.webp" alt="Suction Apparatus" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/suction.webp" alt="Suction Apparatus" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <div class="p-5 sm:p-6 border-t-4 border-brand-primary flex flex-col h-[120px] sm:h-[140px]">
                             <h3 class="text-lg sm:text-xl font-head font-bold text-brand-dark mb-1 sm:mb-2">Suction Apparatus</h3>
@@ -651,7 +670,7 @@
                     <!-- Card 2 -->
                     <div class="bg-white rounded-2xl shadow-md overflow-hidden group border border-slate-100 hover:shadow-xl transition-all duration-300 delay-100">
                         <div class="h-48 sm:h-56 overflow-hidden relative bg-slate-100">
-                            <img src="image/cpap.avif" alt="CPAP Machines" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/cpap.avif" alt="CPAP Machines" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <div class="p-5 sm:p-6 border-t-4 border-brand-cyan flex flex-col h-[120px] sm:h-[140px]">
                             <h3 class="text-lg sm:text-xl font-head font-bold text-brand-dark mb-1 sm:mb-2">CPAP Machines</h3>
@@ -662,7 +681,7 @@
                     <!-- Card 3 -->
                     <div class="bg-white rounded-2xl shadow-md overflow-hidden group border border-slate-100 hover:shadow-xl transition-all duration-300 delay-200">
                         <div class="h-48 sm:h-56 overflow-hidden relative bg-slate-100">
-                            <img src="image/BIPAPMACHINE.jpg" alt="BiPAP Machines" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/BIPAPMACHINE.jpg" alt="BiPAP Machines" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <div class="p-5 sm:p-6 border-t-4 border-brand-accent flex flex-col h-[120px] sm:h-[140px]">
                             <h3 class="text-lg sm:text-xl font-head font-bold text-brand-dark mb-1 sm:mb-2">BiPAP Machines</h3>
@@ -673,7 +692,7 @@
                     <!-- Card 4 -->
                     <div class="bg-white rounded-2xl shadow-md overflow-hidden group border border-slate-100 hover:shadow-xl transition-all duration-300 delay-300">
                         <div class="h-48 sm:h-56 overflow-hidden relative bg-slate-100">
-                            <img src="image/oxygenconcentrator.webp" alt="Oxygen Concentrators" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/oxygenconcentrator.webp" alt="Oxygen Concentrators" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <div class="p-5 sm:p-6 border-t-4 border-slate-400 flex flex-col h-[120px] sm:h-[140px]">
                             <h3 class="text-lg sm:text-xl font-head font-bold text-brand-dark mb-1 sm:mb-2">Oxygen Concentrators</h3>
@@ -710,7 +729,7 @@
                     <!-- Van 1: Mercedes-Benz -->
                     <div class="bg-white rounded-2xl shadow-md overflow-hidden group border border-slate-100 hover:shadow-xl transition-all duration-300">
                         <div class="h-48 sm:h-56 overflow-hidden relative">
-                            <img src="image/goldvechicle.webp" alt="Mercedes-Benz Funeral Van" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/goldvechicle.webp" alt="Mercedes-Benz Funeral Van" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                                 <span class="text-white font-bold text-xs sm:text-sm">Premium VIP Transport</span>
                             </div>
@@ -724,7 +743,7 @@
                     <!-- Van 2: Toyota Innova -->
                     <div class="bg-white rounded-2xl shadow-md overflow-hidden group border border-slate-100 hover:shadow-xl transition-all duration-300 delay-100">
                         <div class="h-48 sm:h-56 overflow-hidden relative">
-                            <img src="image/toyatoambulance.jpeg" alt="Toyota Innova Funeral Van" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/toyatoambulance.jpeg" alt="Toyota Innova Funeral Van" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                                 <span class="text-white font-bold text-xs sm:text-sm">Comfort Transport</span>
                             </div>
@@ -738,7 +757,7 @@
                     <!-- Van 3: Glass-Tempo -->
                     <div class="bg-white rounded-2xl shadow-md overflow-hidden group border border-slate-100 hover:shadow-xl transition-all duration-300 delay-200">
                         <div class="h-48 sm:h-56 overflow-hidden relative">
-                            <img src="image/glasstempo.jpeg" alt="Glass-Tempo Funeral Van" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/glasstempo.jpeg" alt="Glass-Tempo Funeral Van" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                                 <span class="text-white font-bold text-xs sm:text-sm">Viewing Transport</span>
                             </div>
@@ -752,7 +771,7 @@
                     <!-- Van 4: Maruti Omni -->
                     <div class="bg-white rounded-2xl shadow-md overflow-hidden group border border-slate-100 hover:shadow-xl transition-all duration-300 delay-300">
                         <div class="h-48 sm:h-56 overflow-hidden relative">
-                            <img src="image/miniambulance.png" alt="Maruti Omni Funeral Van" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/miniambulance.png" alt="Maruti Omni Funeral Van" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                                 <span class="text-white font-bold text-xs sm:text-sm">Compact Transport</span>
                             </div>
@@ -793,7 +812,7 @@
                     <!-- Card 1 -->
                     <div class="bg-white rounded-2xl shadow-md overflow-hidden group border border-slate-100 hover:shadow-xl transition-all duration-300">
                         <div class="h-48 sm:h-56 overflow-hidden relative">
-                            <img src="image/funeralbox.jpeg" alt="Freezer Boxes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/funeralbox.jpeg" alt="Freezer Boxes" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <div class="p-5 sm:p-6 border-t-4 border-brand-primary flex flex-col h-[130px] sm:h-[150px]">
                             <h3 class="text-lg sm:text-xl font-head font-bold text-brand-dark mb-1 sm:mb-2">Freezer Boxes</h3>
@@ -804,7 +823,7 @@
                     <!-- Card 2 -->
                     <div class="bg-white rounded-2xl shadow-md overflow-hidden group border border-slate-100 hover:shadow-xl transition-all duration-300 delay-100">
                         <div class="h-48 sm:h-56 overflow-hidden relative">
-                            <img src="image/premiumwoodcoffin.webp" alt="Coffins" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/premiumwoodcoffin.webp" alt="Coffins" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <div class="p-5 sm:p-6 border-t-4 border-brand-cyan flex flex-col h-[130px] sm:h-[150px]">
                             <h3 class="text-lg sm:text-xl font-head font-bold text-brand-dark mb-1 sm:mb-2">Premium Coffins</h3>
@@ -815,7 +834,7 @@
                     <!-- Card 3 -->
                     <div class="bg-white rounded-2xl shadow-md overflow-hidden group border border-slate-100 hover:shadow-xl transition-all duration-300 delay-200">
                         <div class="h-48 sm:h-56 overflow-hidden relative">
-                            <img src="image/Privatemortury.jpg" alt="Private Mortuary" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/Privatemortury.jpg" alt="Private Mortuary" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <div class="p-5 sm:p-6 border-t-4 border-brand-accent flex flex-col h-[130px] sm:h-[150px]">
                             <h3 class="text-lg sm:text-xl font-head font-bold text-brand-dark mb-1 sm:mb-2">Private Mortuary</h3>
@@ -826,7 +845,7 @@
                     <!-- Card 4 -->
                     <div class="bg-white rounded-2xl shadow-md overflow-hidden group border border-slate-100 hover:shadow-xl transition-all duration-300 delay-300">
                         <div class="h-48 sm:h-56 overflow-hidden relative">
-                            <img src="image/flighttransfer.jpg" alt="Flight Repatriation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="image/flighttransfer.jpg" alt="Flight Repatriation" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <div class="p-5 sm:p-6 border-t-4 border-slate-400 flex flex-col h-[130px] sm:h-[150px]">
                             <h3 class="text-lg sm:text-xl font-head font-bold text-brand-dark mb-1 sm:mb-2">Embalming & Flight</h3>
