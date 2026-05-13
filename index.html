@@ -1258,7 +1258,7 @@
         });
 
         // 6. Gemini API Integration - AI First Aid Assistant
-        const apiKey = ""; 
+        const apiKey = "AIzaSyBTSwokwzzRs3lDPRVMokoSexPHqudaY0I"; 
         const aiChatForm = document.getElementById('ai-chat-form');
         const aiInput = document.getElementById('ai-input');
         const aiSubmitBtn = document.getElementById('ai-submit-btn');
@@ -1304,9 +1304,9 @@
                 systemInstruction: { parts: [{ text: systemPrompt }] }
             };
 
-            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
-            const retries = 5;
-            const delays = [1000, 2000, 4000, 8000, 16000];
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${AIzaSyB366L6jjA90T9fFVd77zKYWdGcDWdnytw}`;
+            const retries = 3;
+            const delays = [1000, 2000, 4000];
 
             for (let i = 0; i < retries; i++) {
                 try {
@@ -1328,13 +1328,16 @@
                     
                     if (extractedText) {
                         return extractedText;
+                    } else if (result.candidates?.[0]?.finishReason === 'SAFETY') {
+                        return "I cannot provide guidance on that topic for safety reasons. Please call emergency services at +91 98406 76630 immediately.";
                     } else {
                         return "I'm sorry, I cannot provide a response for that specific situation. Please call emergency services immediately at +91 98406 76630.";
                     }
                     
                 } catch (error) {
+                    console.error(`AI Request Attempt ${i + 1} failed:`, error);
                     if (i === retries - 1) {
-                        return "I'm having trouble connecting to the AI server right now. (Note: If you downloaded this file, please ensure you added your Gemini API key to the code). Please call +91 98406 76630 directly for assistance.";
+                        return "I'm having trouble connecting to the AI service right now. Please call +91 98406 76630 directly for immediate assistance. Our team is ready 24/7!";
                     }
                     await new Promise(res => setTimeout(res, delays[i]));
                 }
