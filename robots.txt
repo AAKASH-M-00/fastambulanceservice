@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fastambulanceservice.com/sitemap.xml
